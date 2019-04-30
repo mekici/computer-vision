@@ -8,7 +8,6 @@ Created on Wed Apr 17 22:09:49 2019
 import matplotlib.pyplot as plt
 import pytesseract 
 from PIL import Image
-
 #eger pytesseract kurulu değilse anaconda prompt'u kullanarak şu kodu yazıp çalıştırın: conda install -c jiayi_anaconda pytesseract 
 
 
@@ -26,7 +25,7 @@ from PIL import Image
   # daha geniş bilgi için -> https://github.com/tesseract-ocr/tesseract/wiki/ImproveQuality
 
 config = ('-l tr --oem 1 --psm 3')
-value=Image.open("images/computer-vision.jpg")
+value=Image.open("images/1.png")
 plt.imshow(value)
 
 text = pytesseract.image_to_string(value, config='')    
